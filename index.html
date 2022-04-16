@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jquery Mobile Page</title>
+  <link rel="stylesheet" href="themes/Week7.css" />
+  <link rel="stylesheet" href="themes/Week7.min.css" />
+
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- Include the jQuery Mobile library -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+
+  </script>
+</head>
+
+<body>
+  <!-- create your page here -->
+  <div data-role="page" id="page1" data-theme="d">
+    <div data-role="header">
+      <h1>Ikram's first page</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#page1" data-icon="home">Home</a></li>
+          <li><a href="#page2" data-icon="star">Vote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="main" class="ui-content">
+      <h1>Hi there!</h1>
+      <p>Welcome to the machine!</p>
+      <div data-role="collapsible">
+        <h1>List of Albums</h1>
+        <p>Wish you were here</p>
+        <p>The Wall</p>
+        <p>Umma Gumma</p>
+      </div>
+      <div data-role="collapsible">
+        <h1>List of Songs</h1>
+        <p>Wish you were here</p>
+        <p>Comfortably Numb</p>
+        <p>Grandchester Meadows</p>
+      </div>
+    </div>
+    <div data-role="footer">
+      <h2>&copy;Ikramul Haque 2022</h2>
+    </div>
+  </div>
+  <div data-role="page" id="page2" data-theme="d">
+    <div data-role="header">
+      <h1>Ikram's second page</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#page1" data-icon="home">Home</a></li>
+          <li><a href="#page2" data-icon="star">Vote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="main" class="ui-content">
+      <h1>What is your favorite Pink Floyd album?</h1>
+      <form>
+        <label for="ratingarea">Enter the name of song or album</label>
+        <textarea name="ratingarea" id="ratingarea" placeholder="Enter you response..."></textarea>
+        <label for="raterange">Enter the rating 0 to 5</label>
+        <input type="range" name="raterange" id="raterange" min=" 0" max="5" />
+        <input type="submit" name="go" id="go" value="Your rating!" />
+      </form>
+    </div>
+    <div data-role="footer">
+      <h2>&copy;Ikramul Haque 2022</h2>
+    </div>
+  </div>
+</body>
+
+</html>
